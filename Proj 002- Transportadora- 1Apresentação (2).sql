@@ -1,0 +1,81 @@
+-- ----------------------------------------------------------------------------------------
+-- Gabriel Issa Shammas (GIS) - 01 de janeiro de 2000 a 31 de dezembro de 2030
+-- ----------------------------------------------------------------------------------------
+-- PROJ002- Transportadora
+--
+-- ----------------------------------------------------------------------------------------
+-- A GIS LEVOTUDO,  uma das empresas do Grupo GIS,  é uma transportadora que possui uma ma-
+-- triz no Brasil, com várias filiais distribuídas por diversos estados do país e também em
+-- vários países.
+-- A GIS LEVOTUDO retira, transporta  e entrega mercadorias para todo o Brasil  e para paí-
+-- ses do mundo inteiro, quer seja através de veículos próprios quer seja através de convê-
+-- nios.
+-- A transportadora conta  com uma frota diversificada de veículos,  incluindo utilitários,
+-- caminhões, VANs e VUCs.
+-- Os veículos são diferenciados para transporte de mercadorias, como VUC,  TOCO (semi-pe-
+-- sado), Truck (pesado), Cavalo Mecânico (extra-pesado),  Cavalo Mecânico Trucado  ou LS,
+-- Bitrem (ou Treminhão), Rodotrem e Guincho (para reboque de outros veículos).
+-- Os veículos podem ser de marcas, cores e ano de fabricação diferentes.
+-- A frota é renovada a cada 5 anos, sendo que a cada ano são adquiridos novos veículos.
+-- Veículos que completam 5 anos de utilização são repassados integralmente  para uma loca-
+-- dora de veículos pertencente ao Grupo GIS e que também possui diversas filiais.
+-- Todas as transações ficam registradas na empresa.
+-- Todos os veículos, motoristas dos veículos, clientes, mercadorias, trajetos, oficinas  e
+-- funcionários são devidamente cadastrados.
+-- Todo transporte de carga tem sua quilometragem controlada.
+-- Todo e qualquer transporte de carga é feito com dois motoristas.
+-- Cada motorista possui uma ficha cadastral e ficha médica completas,  atualizadas sempre
+-- que necessário.
+-- Cada motorista é acompanhado constantemente.
+-- Cada motorista deve realizar  um exame médico trimestral.  A não realização deste exame
+-- periódico impede a prestação de serviço do motorista.
+-- A empresa mantém um mapeamento de todas as praças de pedágios, com os valores atualiza-
+-- dos.
+-- O pagamento nas praças de pedágio  é feita através de cobrança automática,  usando ser-
+-- viços como o Sem Parar.
+-- O frete é tabelado e a empresa respeita esta tabela.
+-- Todas as saídas e chegadas são programadas.
+-- São registradas toda e qualquer retirada e entrega de mercadorias.
+-- Toda carga é registrada em manifestos, onde consta o valor da mesma.
+-- Cada viagem deve ser autorizada por um funcionário supervisor,  devidamente identifica-
+-- do. A autorização contém a data, hora, local e id do supervisor.
+-- Cada motorista dirige por 4 (quatro) horas no máximo, devendo então haver o rodízio en-
+-- tre eles.
+-- Cada mudança ocorrida entre os motoristas é registrada.
+-- Para facilitar a comunicação interna, o motorista que encontra-se dirigindo o veículo é
+-- chamado de Motorista Principal e o seu colega que se encontra em descanso  é chamado de
+-- Motorista Secundário.
+-- Os eventos de uma viagem são registrados  no que é chamado Diário de Bordo.
+-- Cada ocorrência possui data, hora, identificação do veículo, da viagem e do motorista.
+-- Os motoristas não recebem salário,  mas são pagos por quilometragem rodada,  conforme a
+-- carga que transportam.
+-- Quanto maior o valor do manifesto, maior é o valor pago por quilômetro rodado.
+-- Na volta da viagem, existe um valor padrão estipulado para remunerar os motoristas,  de
+-- modo que eles não fiquem sem remuneração, também em função da quilometragem rodada.
+-- Não há nenhum impedimento para que os motoristas realizem uma nova viagem  tão logo te-
+-- nham feito a descarga das mercadorias que transportavam,  não sendo necessário retorna-
+-- rem para o local de partida.
+-- A única obrigação dos motoristas é a prestação de contas da viagem, o que pode ser fei-
+-- to remotamente.
+-- As refeições dos motoristas, o abastecimento do veículo  e eventuais manutenções reali-
+-- zadas nos veículos  são reembolsadas pela transportadora,  desde que sejam  devidamente
+-- documentadas e registradas.
+-- A empresa realiza periodicamente uma estatística dos gastos com refeições  e dos gastos
+-- com combustíveis e manutenção dos veículos.
+-- As multas que porventura o motorista venha a receber durante a viagem  também são reem-
+-- bolsadas pela empresa.
+-- A cada 4 (quatro) multas recebidas por um motorista, provoca a sua suspensão na presta-
+-- ção de serviço por uma semana (7 dias corridos). Todos estes eventos são registrados.
+-- A cada 12 (doze) meses, o motorista que não apresentar nenhuma multa recebida é premia-
+-- do com um bônus financeiro.
+-- Cada veículo da frota possui um histórico de manutenção,  que é realizada periodicamen-
+-- te, e em função de necessidades específicas,  em uma oficina pertencente ao Grupo GIS,
+-- a qual possui diversas filiais.
+-- Estas oficinas  contam com funcionários habilitados  e especializados,  devidamente ca-
+-- dastrados.
+--
+-- ----------------------------------------------------------------------------------------
+-- Fim PROJ002- Transportadora
+-- ----------------------------------------------------------------------------------------
+--
+--

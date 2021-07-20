@@ -1,0 +1,112 @@
+-- ----------------------------------------------------------------------------------------
+-- Gabriel Issa Shammas (GIS) - 01 de janeiro de 2000 a 31 de dezembro de 2020
+-- ----------------------------------------------------------------------------------------
+-- PROJ002- Transportadora 
+--
+-- T0518A- PROJ002- Elaborar 2 queries simples.
+--         ATENÇÃO: São ações contra uma tabela ou duas tabelas, envolvendo até cinco utili-
+--                  zações de predicados.
+--         ATENÇÃO: Elaborar as queries e mostrar a solução para cada uma das queries.
+--         ATENÇÃO: A entrega pode ser feita através de um único script contendo as queries.
+--
+-- T0518B- PROJ002- Elaborar 2 queries de baixa complexidade.
+--         ATENÇÃO: São ações contra até cinco tabelas, envolvendo até quinze utilizações de
+--                  predicados.
+--         ATENÇÃO: Elaborar as queries e mostrar a solução para cada uma das queries.
+--         ATENÇÃO: A entrega pode ser feita através de um único script contendo as queries.
+--
+-- T0518C- PROJ002- Elaborar 2 queries de média complexidade.
+--         ATENÇÃO: São ações contra 6 ou mais tabelas, envolvendo acima de 15 utilizações de
+--                  predicados.
+--         ATENÇÃO: Elaborar as queries e mostrar a solução para cada uma das queries.
+--         ATENÇÃO: A entrega pode ser feita através de um único script contendo as queries.
+--
+-- T0525A- PROJ002- Elaborar uma política de backup para as tabelas deste projeto.
+--         ATENÇÃO: Estabelecer em que momento será realizada cópia das tabelas e como será
+--                  a cópia (Full ou incremental).
+--                  Estabelecer a periodicidade das cópias  (Cópia Diária, semanal, quinze-
+--                  nal, mensal, bimestral, trimestral, semestral, anual).
+--         ATENÇÃO: Estabelecer as gerações das cópias. Para cada periodicidade,  estabele-
+--                  cer se as cópias serão guardadas em 3, 4, 5 ou mais gerações.
+--         ATENÇÃO: A entrega pode ser feita através de um documento Word.
+--
+-- T0525B- PROJ002- Elaborar  uma lista de autorizações  por tabela  para cada função/cargo
+--                  existente.
+--         ATENÇÃO: As quatro autorizações possíveis são: D (Delete), I (Insert), S (Select),
+--                  U (Update). Referenciar a autorização pela letra indicativa da mesma.
+--         ATENÇÃO: Não é necessário descrever as atividades de cada função/cargo mencionadas.
+--         ATENÇÃO: A entrega pode ser feita através de um documento Word.
+--               
+-- T0525C- PROJ002- Com base na lista de autorizações,  elaborar um script  com os comandos
+--                  Grant e Revoke de concessão de autorizações.
+--         ATENÇÃO: A entrega pode ser feita através de um único script com todos os coman-
+--                  dos.
+--
+-- T0601A- PROJ002- Elaborar ao menos uma stored procedure, sem passagem de parâmetros, que
+--                  faça uso das tabelas.
+--         ATENÇÃO: Elaborar a descrição do problema e codificar a procedure que atende  ao
+--                  problema especificado.
+--         ATENÇÃO: A entrega pode ser feita através de um script  contendo a descrição  do
+--                  problema e a codificação.
+--
+-- T0601B- PROJ002- Elaborar ao menos uma stored procedure, com passagem de parâmetros, que
+--                  faça uso das tabelas.
+--         ATENÇÃO: Elaborar a descrição do problema e codificar a procedure que atende  ao
+--                  problema especificado.
+--         ATENÇÃO: A entrega pode ser feita através de um script  contendo a descrição  do
+--                  problema e a codificação.
+--
+-- T0601C- PROJ002- Para a tabela de MOTORISTAS, mostrar os cálculos de volumetria.
+--         ATENÇÃO: Considerar os seguintes valores para os cálculos:
+--         ATENÇÃO: Cardinalidade 360 (trezentos e sessenta) motoristas
+--                  Tamanho da página: 4KB (4.096 bytes)
+--                  Free space (índice): 10% (dez por cento)
+--
+-- T0608A- PROJ002- Gerar o script para a construção de ao menos  um índice secundário para
+--                  uma tabela.
+--         ATENÇÃO: Fazer isso para ao menos 2 tabelas.
+--         ATENÇÃO: A entrega pode ser feita através de um único script com todos os coman-
+--                  dos Create Index.
+--
+-- T0608B- PROJ002- Gerar o script para a construção de ao menos  um índice alternado  para
+--                  uma tabela.
+--         ATENÇÃO: Fazer isso para ao menos 2 tabelas.
+--         ATENÇÃO: A entrega pode ser feita através de um único script com todos os coman-
+--                  dos Create Index.
+--
+-- T0608C- PROJ002- Gerar o script para a construção de ao menos uma view (visão).
+--         ATENÇÃO: A visão pode referenciar uma ou mais tabelas.
+--
+-- T0608D- PROJ002- Implementar a regra Cascade em pelo menos uma tabela
+--         ATENÇÃO: No final do script, na área de comentários,  justificar o uso dessa re-
+--                  gra, falando sobre as razões da escolha e impactos sobre o projeto.
+--
+-- T0615A- PROJ002- Elaborar as regras de negócio complementares ao texto.
+--         ATENÇÃO: A entrega pode ser feita através de um documento Word  ou através de um
+--                  arquivo TXT
+--
+-- T0615B- PROJ002- Gerar os scripts de criação das tabelas.
+--         ATENÇÃO: Vincular este projeto com o Proj001, através da tabela de CIDADES.
+--                  (Já oferecemos uma orientação a respeito)
+--         ATENÇÃO: Verificar se existem outros vínculos possíveis e, se existirem, efetuar
+--                  estes vínculos.
+--         ATENÇÃO: Verificar a possibilidade de vincular este projeto com o Projeto 03.
+--         ATENÇÃO: Verificar a possibilidade de vincular este projeto com o Projeto 04.
+--         ATENÇÃO: Definir corretamente os domínios para as colunas conforme a necessidade
+--                  através de declarações CONSTRAINT.
+--         ATENÇÃO: A entrega pode ser feita através de um único script com todos os coman-
+--                  dos Create Table, na sequência correta de criação.
+--
+-- T0615C- PROJ002- Gerar os scripts de carga das tabelas.
+--                  Carregar um mínimo de 4 linhas por tabela.
+--         ATENÇÃO: A entrega pode ser feita através de um único script com todos os coman-
+--                  dos INSERT, na sequência correta de criação.
+--         ATENÇÃO: Usar o Insert em Massa (Mass Insert) em pelo menos uma carga de tabela. 
+--                  Se optar por usar Insert em Massa para todas as tabelas,  então usar  o
+--                  Insert tradicional em pelo menos uma carga de tabela.
+--
+-- ----------------------------------------------------------------------------------------
+-- Fim P02- Transportadora
+-- ----------------------------------------------------------------------------------------
+--
+--
